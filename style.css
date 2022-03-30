@@ -1,0 +1,408 @@
+
+/*Cuando agregue margin, pading o border a los elementos no crezcan mas allá del tamaño especificado*/
+*{
+    box-sizing: border-box;
+  }
+  
+  /*Se dirija lentamente dependiendo de la opción del menú*/
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  #inicio{
+    height: 100vh;
+      position: relative;
+      color: #ffffff;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+      background-size: cover;
+  }
+  
+  video{
+    position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1{ font-size: 1.5em;}
+  h2{ font-size: 1.5em;}
+  h3{ font-size: 1.5em;}
+  p{ font-size: 1em;}
+  
+  
+  .container{
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .container .ubi{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 90%;
+  }
+  
+  .ubi img{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*menú*/
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    background: #212121;
+}
+
+#btn-menu{
+   display: none;
+
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #ffffff;
+
+}
+
+header label:hover{
+    cursor:pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+header a:hover{
+    color: #b34524e0;
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li{
+    flex-grow: 1;
+}
+
+.menu li:hover{
+    background: #414141c2;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:900px){
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: #212121;
+        width: 70%;
+        margin-left: -70%;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+}
+
+
+#portada{
+    display: flex;
+    height: 40vh;
+    background-image: url("img/portada.jpg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 1568px;
+
+}
+
+
+
+
+#servicios{
+    background-color: #5a24249f;
+    color: #212121;
+    text-align: center;
+  }
+  
+  #servicios .container{
+    padding: 30px 12px;
+  }
+  
+  #servicios h2{
+    margin-top: 0;
+    font-size: 3em;
+  }
+  
+  #servicios p{
+    display: none;
+  }
+  
+  
+  #servicios .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 30px;
+    margin: 12px;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  
+  .carta:first-child{
+    background-image: url("img/full.jpg");
+    color: #ffffff;
+    
+    
+  }
+  
+  .carta:nth-child(2){
+    background-image: url("img/semiFull.jpg");
+    color: #ffffff;
+  }
+  
+  .carta:nth-child(3){
+    background-image: url("img/basico.jpg");
+    color: #ffffff;
+  }
+  
+  
+  
+  #quienesSomos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url("img/fond.jpg.JPEG");
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-weight: bold;
+  }
+  
+  #quienesSomos p{
+    text-align: justify;
+  }
+  
+  
+  
+  #formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url("img/fontForm.jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .Container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #c9c9c9;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  .cont{
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+  }
+  
+  .cont h2{
+    margin: 0;
+    text-align: center;
+  }
+  
+  .form{
+    padding: 30px 40px;
+  }
+  
+  .form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .form-control input:focus{
+    outline: 0;
+    border-color: #777;
+  }
+  
+  .form-control.success input{
+    border-color: #2ecc71;
+  }
+  
+  .form-control.error input {
+      border-color: #e74c3c;
+  }
+  
+  .form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+  }
+  
+  .form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+  }
+  
+  .form-control.error i.fa-exclamation-circle {
+      color: #e74c3c;
+      visibility: visible;
+  }
+  
+  .form-control small{
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .form-control.error small{
+    visibility: visible;
+  }
+  
+  .form button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 9px 20px;
+    border-radius: 9px;
+    border: 2px solid #52525280;
+    box-shadow: 2px 2px 10px #3a3a3a80;
+    color: white;
+    background-color: #414141;
+  }
+  
+  /*Para que se note cuando el cursor pasa por encima del botón*/
+  button:hover{
+    background-color: #b34524e0;
+  }
+  
+  #ubicacion{
+    background-color: #1b1b1b;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  #ubicacion img{
+    display: center;
+  }
+  
+  #ubicacion .ubi{
+    display: flex;
+  }
+  
+  
+  #redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #5a24249f;
+    color: #000000;
+    height: auto;
+  }
+  
+  /*Cuando el ancho de la pantalla supere los 720px se aplicarán los siguientes estilos*/
+  @media(min-width:720px){
+    #header{
+      position: 100%;
+    }
+    #header .container{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #header nav{
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+    }
+  
+    #servicios .serv{
+      justify-content: center;
+    }
+  
+    #servicios p{
+      display: block;
+      margin-bottom: 30px;
+    }
+  
+    #servicios h3{
+      margin-top: 0;}
+      
+  
+    }
+  
+    #servicios .carta{
+      padding: 50px;
+    }
+  
+  
+  
+  @media screen and (max-width:800px){
+    .menu{
+      flex-direction: column;
+    }
+  }
